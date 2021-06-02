@@ -29,5 +29,6 @@ export class FeedbackComponent implements OnInit {
       return;
     }
     console.log(this.feedbackForm.value);
+    localStorage.setItem('feedback', this.feedbackForm.value)
   }
 }
